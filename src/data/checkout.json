@@ -1,0 +1,331 @@
+{
+  "customerTitle": {
+    "type": "select",
+    "name": "customerTitle",
+    "divId": "customer-title-field",
+    "divClass": "form-field form-field--select form-field--customer-title",
+    "id": "customer-title",
+    "class": "field-select  field-is-saved-local field-select--customer-title",
+    "label": "Anrede * ",
+    "value": "",
+    "props": {
+      "required": true
+    },
+    "options": [
+      {
+        "key": "blank",
+        "label": "",
+        "value": ""
+      },
+      {
+        "key": "woman",
+        "label": "Frau",
+        "value": "woman"
+      },
+      {
+        "key": "man",
+        "label": "Herr",
+        "value": "man"
+      }
+    ]
+  },
+  "customerFirstName": {
+    "type": "text",
+    "name": "customerFirstName",
+    "divId": "customer-first-name-field",
+    "divClass": "form-field form-field--input form-field--customer-first-name",
+    "id": "customer-first-name-field",
+    "class": "field-input field-is-saved-local field-input--text field-input--customer-first-name",
+    "label": "Vorname * ",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "customerLastName": {
+    "type": "text",
+    "name": "customerLastName",
+    "divId": "customer-last-name-field",
+    "divClass": "form-field form-field--input form-field--customer-last-nam",
+    "id": "customer-last-name",
+    "class": "field-input field-is-saved-local field-input--text field-input--customer-last-name",
+    "label": "Nachname * ",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "birthDate": {
+    "type": "birthDate",
+    "name": "birthDate",
+    "value": ""
+  },
+  "customerStreet": {
+    "type": "text",
+    "name": "customerStreet",
+    "divId": "customer--address-street-field",
+    "divClass": "form-field form-field--input form-field--customer-address-street",
+    "id": "customer-address-street",
+    "class": "field-input field-is-saved-local field-input--text field-input--customer-address-street",
+    "label": "Straße Nr * ",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "customerPostalCode": {
+    "type": "text",
+    "name": "customerPostalCode",
+    "divId": "customer-address-postcode-field",
+    "divClass": "form-field form-field--input form-field--customer-address-postcode",
+    "id": "customer-address-postcode",
+    "class": "field-input field-is-saved-local field-input--text field-input--customer-address-postcode",
+    "label": "PLZ * ",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "customerCity": {
+    "type": "text",
+    "name": "customerCity",
+    "divId": "customer-address-city-field",
+    "divClass": "form-field form-field--input form-field--customer-address-city",
+    "id": "customer-address-city",
+    "class": "field-input field-is-saved-local field-input--text field-input--customer-address-city",
+    "label": "Ort * ",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "customerEmail": {
+    "type": "text",
+    "name": "customerEmail",
+    "divId": "customer-email-field",
+    "divClass": "form-field form-field--email form-field--customer-email",
+    "id": "customer-email",
+    "class": "field-input field-is-saved-local field-input--text field-input--customer-email",
+    "label": "E-mail * ",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "customerPhone": {
+    "type": "text",
+    "name": "customerPhone",
+    "divId": "customer-phone-number-field",
+    "divClass": "form-field form-field--input form-field--customer-phone-number",
+    "id": "customer-phone-number",
+    "class": "field-input field-is-saved-local field-input--text field-input--customer-phone-number prevent-characters",
+    "label": "Telephone (optional) ",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "bankAccountHolderType": {
+    "type": "radio",
+    "name": "bankAccountHolderType",
+    "id": "field-radio-wrapper-holder",
+    "value": "insured",
+    "conditional": false,
+    "props": {
+      "required": true
+    },
+    "options": [
+      {
+        "key": "insured",
+        "id": "bank-account-holder-type-insured",
+        "class": "field-input field-is-saved-local field-input--radio field-input--bank-account-holder-type",
+        "label": "Versicherungsnehmer",
+        "value": "insured",
+        "checked": true
+      },
+      {
+        "key": "new",
+        "id": "bank-account-holder-type-new",
+        "class": "field-input field-is-saved-local field-input--radio field-input--bank-account-holder-type",
+        "label": "abweichender Beitragszahler",
+        "value": "new"
+      }
+    ]
+  },
+  "bankAccountHolderTitle": {
+    "type": "select",
+    "name": "bankAccountHolderTitle",
+    "divId": "bank-account-holder-title-field",
+    "divClass": "form-field form-field--select form-field--bank-account-holder-title",
+    "id": "bank-account-holder-title",
+    "class": "field-select field-is-saved-local field-select--bank-account-holder-title",
+    "label": "Anrede",
+
+    "value": "",
+    "props": {
+      "required": true
+    },
+    "conditional": {
+      "fieldName": "bankAccountHolderType",
+      "value": "new"
+    },
+    "options": [
+      {
+        "key": "blank",
+        "label": "",
+        "value": ""
+      },
+      {
+        "key": "woman",
+        "label": "Frau",
+        "value": "woman"
+      },
+      {
+        "key": "man",
+        "label": "Herr",
+        "value": "man"
+      }
+    ]
+  },
+  "bankAccountHolderFirstName": {
+    "type": "text",
+    "name": "bankAccountHolderFirstName",
+    "divId": "bank-account-holder-first-name-field",
+    "divClass": "form-field form-field--input form-field--bank-account-holder-first-name",
+    "id": "bank-account-holder-first-name",
+    "class": "field-input field-is-saved-local field-input--text field-input--bank-account-holder-first-name",
+    "key": "sub",
+    "label": "Vorname",
+    "value": "",
+    "conditional": {
+      "fieldName": "bankAccountHolderType",
+      "value": "new"
+    },
+    "props": {
+      "required": true
+    }
+  },
+  "bankAccountHolderLastName": {
+    "type": "text",
+    "name": "bankAccountHolderLastName",
+    "divId": "bank-account-holder-last-name-field",
+    "divClass": "form-field form-field--input form-field--bank-account-holder-last-name",
+    "id": "bank-account-holder-last-name",
+    "class": "field-input field-is-saved-local field-input--text field-input--bank-account-holder-last-name",
+    "label": "Nachname",
+    "value": "",
+    "conditional": {
+      "fieldName": "bankAccountHolderType",
+      "value": "new"
+    },
+    "props": {
+      "required": true
+    }
+  },
+  "bankAccountHolderAddressStreet": {
+    "type": "text",
+    "name": "bankAccountHolderAddressStreet",
+    "divId": "bank-account-holder-address-street-field",
+    "divClass": "form-field form-field--input form-field--bank-account-holder-address-street",
+    "id": "bank-account-holder-address-street",
+    "class": "field-input field-is-saved-local field-input--text field-input--bank-account-holder-address-street",
+    "label": "Straße, Nr",
+    "value": "",
+    "conditional": {
+      "fieldName": "bankAccountHolderType",
+      "value": "new"
+    },
+    "props": {
+      "required": true
+    }
+  },
+  "bankAccountHolderAddressPostCode": {
+    "type": "text",
+    "name": "bankAccountHolderAddressPostCode",
+    "divId": "bank-account-holder-address-postcode-field",
+    "divClass": "form-field form-field--input form-field--bank-account-holder-address-postcode",
+    "id": "bank-account-holder-address-postcode",
+    "class": "field-input field-is-saved-local field-input--text field-input--bank-account-holder-address-postcode",
+    "label": "PLZ",
+    "value": "",
+    "conditional": {
+      "fieldName": "bankAccountHolderType",
+      "value": "new"
+    },
+    "props": {
+      "required": true
+    }
+  },
+  "bankAccountHolderAddressCity": {
+    "type": "text",
+    "name": "bankAccountHolderAddressCity",
+    "divId": "bank-account-holder-address-city-field",
+    "divClass": "form-field form-field--input form-field--bank-account-holder-address-city",
+    "id": "bank-account-holder-address-city",
+    "class": "field-input field-is-saved-local field-input--text field-input--bank-account-holder-address-city",
+    "label": "Ort",
+    "value": "",
+    "conditional": {
+      "fieldName": "bankAccountHolderType",
+      "value": "new"
+    },
+    "props": {
+      "required": true
+    }
+  },
+  "bankPaymentType": {
+    "type": "radio",
+    "name": "bankPaymentType",
+    "id": "field-radio-wrapper-method",
+    "value": "iban",
+    "props": {
+      "required": true
+    },
+    "options": [
+      {
+        "key": "iban",
+        "id": "bank-payment-type-iban",
+        "class": "field-input field-input--radio field-input--bank-payment-type field-input--bank-payment-type-iban",
+        "label": "IBAN",
+        "value": "iban",
+        "checked": true
+      },
+      {
+        "key": "bill",
+        "id": "bank-payment-type-bill",
+        "class": "field-input field-input--radio field-input--bank-payment-type field-input--bank-payment-type-bill",
+        "label": "Rechnung",
+        "value": "bill"
+      }
+    ]
+  },
+  "bankPaymentIban": {
+    "type": "text",
+    "name": "bankPaymentIban",
+    "divId": "bank-payment-iban-field",
+    "divClass": "form-field form-field--input form-field--bank-payment-iban",
+    "id": "ank-payment-iban",
+    "class": "field-input field-input--text field-input--bank-payment-iban",
+    "label": "IBAN",
+    "conditional": {
+      "fieldName": "bankPaymentType",
+      "value": "iban"
+    },
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "legalCheckbox": {
+    "type": "checkbox",
+    "name": "legalCheckbox",
+    "divId": "legal-checkbox-field",
+    "divClass": "bd24__checkout-terms",
+    "id": "legal-checkbox",
+    "class": "field-input field-input--checkbox",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  }
+}

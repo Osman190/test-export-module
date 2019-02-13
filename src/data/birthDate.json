@@ -1,0 +1,41 @@
+{
+  "customerBirthdayDay": {
+    "type": "text",
+    "name": "customerBirthdayDay",
+    "divId": "customer-birthday-day-field",
+    "divClass": "memorable-date__day field-dayWrapper",
+    "id": "customer-birthday-day",
+    "class": "field-input field-is-saved-local prevent-characters field-input--text field-input--customer-birthday-day",
+    "label": "Tag",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "customerBirthdayMonth": {
+    "type": "text",
+    "name": "customerBirthdayMonth",
+    "divId": "customer-birthday-month-field",
+    "divClass": "memorable-date__month field-monthWrapper",
+    "id": "customer-birthday-month",
+    "class": "field-input field-is-saved-local prevent-characters field-input--text field-input--customer-birthday-month",
+    "label": "Monat",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  },
+  "customerBirthdayYear": {
+    "type": "text",
+    "name": "customerBirthdayYear",
+    "divId": "customer-birthday-year-field",
+    "divClass": "memorable-date__year field-yearWrapper",
+    "id": "customer-birthday-year",
+    "class": "field-input field-is-saved-local prevent-characters field-input--text field-input--customer-birthday-year",
+    "label": "Jahr",
+    "value": "",
+    "props": {
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "personalData": {
+    "title": "Ihre Daten",
+    "class": "bd24__checkout__form checkout__form--user-data",
+    "keys": [
+      ["customerTitle", "customerFirstName", "customerLastName"],
+      ["birthDate"],
+      ["customerStreet", "customerPostalCode", "customerCity"],
+      ["customerPhone", "customerEmail"]
+    ]
+  },
+  "bankAccountHolderData": {
+    "title": "Zahlung",
+    "class": "bd24__checkout__form checkout__form--holder",
+    "keys": [
+      ["bankAccountHolderType"],
+      ["bankAccountHolderTitle", "bankAccountHolderFirstName", "bankAccountHolderLastName"],
+      [
+        "bankAccountHolderAddressStreet",
+        "bankAccountHolderAddressPostCode",
+        "bankAccountHolderAddressCity"
+      ]
+    ]
+  },
+  "bankPaymentTypeData": {
+    "title": "Zahldaten",
+    "class": "bd24__checkout__form checkout__form--checkout_type",
+    "keys": [["bankPaymentType"], ["bankPaymentIban"]]
+  },
+  "legalCheckboxData": {
+    "class": "bd24__checkout-terms",
+    "keys": [["legalCheckbox"]]
+  }
+}
